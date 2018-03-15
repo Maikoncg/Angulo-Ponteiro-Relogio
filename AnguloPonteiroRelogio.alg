@@ -1,7 +1,7 @@
 ALGORITMO "anguloRelogio"
 // Função : Calcular o ângulo entre os ponteiros do relógio.
 // Autor : Maikon Camilo Gosch.
-// Data : 13/03/2018.
+// Data : 14/03/2018.
 VAR
     horas,minutos:INTEIRO
     retornaAnguloRelogio:REAL
