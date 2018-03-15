@@ -62,23 +62,23 @@ INICIO
                    LEIA(resposta)
 
                    // Valida os valores inseridos e informa o usuário caso algo esteja errado.
-                   SE(resposta <> "s") E (resposta <> "n") ENTAO
-                       LIMPATELA
-                       ESCREVAL("=================================")
-                       ESCREVAL("LETRA INVÁLIDA. Tente Novamente.")
-                       INTERROMPA
-                   FIMSE
-                   SE(resposta = "s") ENTAO
-                       LIMPATELA
-                       ESCREVAL("=================================")
-                       ESCREVAL("Bem vindo Novamente.")
-                       INTERROMPA
-                   SENAO(resposta = "n")
-                       LIMPATELA
-                       ESCREVAL("=================================")
-                       ESCREVAL("Obrigado por utilizar o programa.")
-                       INTERROMPA
-                   FIMSE
+                   ESCOLHA resposta
+                CASO "s"
+                    LIMPATELA
+                    ESCREVAL("=================================")
+                    ESCREVAL("Bem vindo Novamente.")
+                    INTERROMPA
+                CASO "n"
+                    LIMPATELA
+                    ESCREVAL("=================================")
+                    ESCREVAL("Obrigado por utilizar o programa.")
+                    INTERROMPA
+                OUTROCASO
+                    LIMPATELA
+                    ESCREVAL("=================================")
+                    ESCREVAL("LETRA INVÁLIDA. Tente Novamente.")
+                    ESCREVAL("=================================")
+             FIMESCOLHA
                  ATE repetirValidacao = "n"
              FIMSE
           ATE resposta = "n"
